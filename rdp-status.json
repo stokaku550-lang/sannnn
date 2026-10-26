@@ -1,35 +1,35 @@
 {
   "active": true,
-  "hostname": "rdpfree-8",
+  "hostname": "rdpfree-9",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 80.4,
     "cpu_threads": 4,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "disk_free_gb": 80.4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-26T13:08:05Z",
-  "expires_at": "2026-10-26T18:50:05Z",
+  "started_at": "2026-10-26T18:49:13Z",
+  "expires_at": "2026-10-27T00:31:13Z",
   "duration_menit": 342,
-  "run_id": "40327842648",
+  "run_id": "40380994495",
   "run_attempt": "1",
-  "run_number": "8",
-  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40327842648",
+  "run_number": "9",
+  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40380994495",
   "mode": "bersih+win10",
   "persist": {
     "restored": true,
-    "files": 130,
     "profile": "C:\\Users\\xyadmin",
-    "source": "xyrdp-state.7z.enc"
+    "source": "xyrdp-state.7z.enc",
+    "files": 130
   },
   "storage": {
-    "boost": "skip",
-    "note": "dilewati sesuai config"
+    "note": "dilewati sesuai config",
+    "boost": "skip"
   },
   "win10": {
     "look": "ok",
@@ -47,31 +47,31 @@
   },
   "games": {
     "fivem": {
-      "sound": true,
-      "status": true
+      "status": true,
+      "sound": true
     },
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+    "minecraft_java": {
+      "official_exe": true,
+      "tlauncher_jar": true,
+      "opengl46": false,
+      "prismlauncher": true,
       "status": "ready"
     },
     "ets2": {
       "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
       "status": "ready"
     },
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "status": "ready-antivm"
-    },
-    "minecraft_java": {
-      "status": "ready",
-      "tlauncher_jar": true,
-      "official_exe": true,
-      "opengl46": false,
-      "prismlauncher": true
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
     },
     "blender": {
       "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
+    },
+    "roblox": {
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
     }
   },
   "extras": {
@@ -83,9 +83,9 @@
     "admin": true
   },
   "tools_hub": {
-    "auto_start": true,
+    "installed": true,
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "installed": true
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -105,20 +105,20 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "tunnel": {
+      "outside": "tailscale",
+      "host": "100.85.102.80",
+      "status": "ok",
+      "port": 3389,
+      "selftest": "ok",
+      "address": "100.85.102.80:3389"
+    },
     "tailscale": {
-      "magicdns": "rdpfree-8.tailb1062c.ts.net.",
+      "hostname": "rdpfree-9",
+      "magicdns": "rdpfree-9.tailb1062c.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
       "status": "ok",
-      "ip": "100.118.76.97",
-      "hostname": "rdpfree-8"
-    },
-    "tunnel": {
-      "status": "ok",
-      "outside": "tailscale",
-      "host": "100.118.76.97",
-      "address": "100.118.76.97:3389",
-      "selftest": "ok",
-      "port": 3389
+      "ip": "100.85.102.80"
     },
     "mode": "tailscale"
   }
