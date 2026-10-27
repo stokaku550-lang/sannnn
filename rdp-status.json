@@ -1,31 +1,31 @@
 {
   "active": true,
-  "hostname": "rdpfree-13",
+  "hostname": "rdpfree-14",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "disk_free_gb": 80.4,
-    "cpu_threads": 4,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "disk_free_gb": 80.1,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-27T17:37:27Z",
-  "expires_at": "2026-10-27T23:19:27Z",
+  "started_at": "2026-10-27T23:20:05Z",
+  "expires_at": "2026-10-28T05:02:05Z",
   "duration_menit": 342,
-  "run_id": "40552143946",
+  "run_id": "40601302642",
   "run_attempt": "1",
-  "run_number": "13",
-  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40552143946",
+  "run_number": "14",
+  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40601302642",
   "mode": "bersih+win10",
   "persist": {
-    "restored": true,
     "files": 130,
-    "source": "xyrdp-state.7z.enc",
-    "profile": "C:\\Users\\xyadmin"
+    "profile": "C:\\Users\\xyadmin",
+    "restored": true,
+    "source": "xyrdp-state.7z.enc"
   },
   "storage": {
     "note": "dilewati sesuai config",
@@ -41,37 +41,37 @@
   },
   "media": {
     "wallpaper": "xyverse_configured_for_user_logon",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "microphone": "rdp_capture_enabled",
     "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled"
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
   },
   "games": {
-    "roblox": {
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
-      "status": "ready-antivm"
-    },
     "minecraft_java": {
+      "tlauncher_jar": true,
       "opengl46": false,
-      "prismlauncher": true,
-      "status": "ready",
       "official_exe": true,
-      "tlauncher_jar": true
-    },
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
-      "status": "ready"
-    },
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
+      "status": "ready",
+      "prismlauncher": true
     },
     "fivem": {
       "status": true,
       "sound": true
     },
     "ets2": {
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
-      "status": "ready"
+      "status": "ready",
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
+    },
+    "blender": {
+      "status": "ready",
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+    },
+    "roblox": {
+      "status": "ready-antivm",
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
+    },
+    "memu": {
+      "status": "ready",
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
     }
   },
   "extras": {
@@ -84,8 +84,8 @@
   },
   "tools_hub": {
     "installed": true,
-    "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -106,20 +106,20 @@
   },
   "akses": {
     "tunnel": {
-      "address": "100.92.107.43:3389",
-      "host": "100.92.107.43",
       "selftest": "ok",
-      "port": 3389,
+      "host": "100.127.184.67",
+      "address": "100.127.184.67:3389",
       "outside": "tailscale",
-      "status": "ok"
+      "status": "ok",
+      "port": 3389
     },
     "mode": "tailscale",
     "tailscale": {
       "status": "ok",
-      "magicdns": "rdpfree-13.tailb1062c.ts.net.",
-      "ip": "100.92.107.43",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree-13"
+      "hostname": "rdpfree-14",
+      "magicdns": "rdpfree-14.tailb1062c.ts.net.",
+      "ip": "100.127.184.67",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL."
     }
   }
 }
