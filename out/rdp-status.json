@@ -1,30 +1,30 @@
 {
   "active": true,
-  "hostname": "rdpfree-10",
+  "hostname": "rdpfree-11",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
+    "disk_free_gb": 80.4,
     "cpu_threads": 4,
-    "ram_gb": 16.0,
-    "disk_free_gb": 80.4
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-27T00:32:49Z",
-  "expires_at": "2026-10-27T06:14:49Z",
+  "started_at": "2026-10-27T06:15:25Z",
+  "expires_at": "2026-10-27T11:57:25Z",
   "duration_menit": 342,
-  "run_id": "40426978624",
+  "run_id": "40459917446",
   "run_attempt": "1",
-  "run_number": "10",
-  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40426978624",
+  "run_number": "11",
+  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/40459917446",
   "mode": "bersih+win10",
   "persist": {
     "restored": true,
-    "profile": "C:\\Users\\xyadmin",
     "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\xyadmin",
     "files": 130
   },
   "storage": {
@@ -41,37 +41,37 @@
   },
   "media": {
     "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled",
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled",
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end."
+    "microphone": "rdp_capture_enabled"
   },
   "games": {
-    "memu": {
-      "status": "ready",
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
-    },
     "ets2": {
-      "status": "ready",
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
-    },
-    "minecraft_java": {
-      "opengl46": false,
-      "official_exe": true,
-      "status": "ready",
-      "prismlauncher": true,
-      "tlauncher_jar": true
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
     },
     "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
+      "status": "ready"
     },
     "fivem": {
       "status": true,
       "sound": true
     },
     "roblox": {
-      "status": "ready-antivm",
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
+    },
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
+    },
+    "minecraft_java": {
+      "tlauncher_jar": true,
+      "status": "ready",
+      "prismlauncher": true,
+      "opengl46": false,
+      "official_exe": true
     }
   },
   "extras": {
@@ -83,9 +83,9 @@
     "admin": true
   },
   "tools_hub": {
-    "auto_start": true,
     "installed": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -105,21 +105,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "tunnel": {
+      "port": 3389,
+      "outside": "tailscale",
+      "status": "ok",
+      "address": "100.72.49.50:3389",
+      "selftest": "ok",
+      "host": "100.72.49.50"
+    },
     "mode": "tailscale",
     "tailscale": {
-      "magicdns": "rdpfree-10.tailb1062c.ts.net.",
-      "ip": "100.101.99.95",
-      "status": "ok",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree-10"
-    },
-    "tunnel": {
-      "host": "100.101.99.95",
+      "ip": "100.72.49.50",
       "status": "ok",
-      "outside": "tailscale",
-      "port": 3389,
-      "address": "100.101.99.95:3389",
-      "selftest": "ok"
+      "magicdns": "rdpfree-11.tailb1062c.ts.net.",
+      "hostname": "rdpfree-11"
     }
   }
 }
