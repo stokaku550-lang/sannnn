@@ -1,35 +1,35 @@
 {
   "active": true,
-  "hostname": "rdpfree-19",
+  "hostname": "rdpfree-20",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
+    "disk_free_gb": 80.0,
     "ram_gb": 16.0,
-    "disk_free_gb": 77.1,
     "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "sanzprime",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-30T06:36:07Z",
-  "expires_at": "2026-10-30T12:18:07Z",
+  "started_at": "2026-10-30T12:17:13Z",
+  "expires_at": "2026-10-30T17:59:13Z",
   "duration_menit": 342,
-  "run_id": "41014930191",
+  "run_id": "41054040733",
   "run_attempt": "1",
-  "run_number": "19",
-  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/41014930191",
+  "run_number": "20",
+  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/41054040733",
   "mode": "bersih+win10",
   "persist": {
-    "profile": "C:\\Users\\sanzprime",
     "files": 82,
     "source": "xyrdp-state.7z.enc",
+    "profile": "C:\\Users\\sanzprime",
     "restored": true
   },
   "storage": {
-    "boost": "skip",
-    "note": "dilewati sesuai config"
+    "note": "dilewati sesuai config",
+    "boost": "skip"
   },
   "win10": {
     "look": "ok",
@@ -41,37 +41,37 @@
   },
   "media": {
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "audio_output": "rdp_playback_enabled",
     "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled",
-    "audio_output": "rdp_playback_enabled"
+    "microphone": "rdp_capture_enabled"
   },
   "games": {
     "memu": {
-      "status": "ready",
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
-    },
-    "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
-    },
-    "minecraft_java": {
-      "prismlauncher": true,
-      "status": "ready",
-      "official_exe": true,
-      "opengl46": false,
-      "tlauncher_jar": true
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
     },
     "ets2": {
-      "status": "ready",
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
     },
     "roblox": {
-      "status": "ready-antivm",
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
+      "status": "ready"
     },
     "fivem": {
       "sound": true,
       "status": true
+    },
+    "minecraft_java": {
+      "tlauncher_jar": true,
+      "opengl46": false,
+      "status": "ready",
+      "official_exe": true,
+      "prismlauncher": true
     }
   },
   "extras": {
@@ -83,9 +83,9 @@
     "admin": true
   },
   "tools_hub": {
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
     "installed": true,
-    "auto_start": true,
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -105,21 +105,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
-    "tailscale": {
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "magicdns": "rdpfree-19.tailb1062c.ts.net.",
-      "hostname": "rdpfree-19",
-      "status": "ok",
-      "ip": "100.72.251.46"
-    },
     "tunnel": {
-      "port": 3389,
+      "selftest": "ok",
       "outside": "tailscale",
+      "port": 3389,
       "status": "ok",
-      "address": "100.72.251.46:3389",
-      "host": "100.72.251.46",
-      "selftest": "ok"
-    }
+      "address": "100.67.76.112:3389",
+      "host": "100.67.76.112"
+    },
+    "tailscale": {
+      "ip": "100.67.76.112",
+      "magicdns": "rdpfree-20.tailb1062c.ts.net.",
+      "hostname": "rdpfree-20",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "status": "ok"
+    },
+    "mode": "tailscale"
   }
 }
