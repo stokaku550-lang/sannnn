@@ -1,35 +1,35 @@
 {
   "active": true,
-  "hostname": "rdpfree-20",
+  "hostname": "rdpfree-21",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
     "disk_free_gb": 80.0,
-    "ram_gb": 16.0,
-    "cpu_threads": 4
+    "cpu_threads": 4,
+    "ram_gb": 16.0
   },
   "rdp_port": 3389,
   "rdp_user": "sanzprime",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-30T12:17:13Z",
-  "expires_at": "2026-10-30T17:59:13Z",
+  "started_at": "2026-10-30T18:03:31Z",
+  "expires_at": "2026-10-30T23:45:31Z",
   "duration_menit": 342,
-  "run_id": "41054040733",
+  "run_id": "41103395727",
   "run_attempt": "1",
-  "run_number": "20",
-  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/41054040733",
+  "run_number": "21",
+  "run_url": "https://github.com/stokaku550-lang/sannnn/actions/runs/41103395727",
   "mode": "bersih+win10",
   "persist": {
     "files": 82,
+    "restored": true,
     "source": "xyrdp-state.7z.enc",
-    "profile": "C:\\Users\\sanzprime",
-    "restored": true
+    "profile": "C:\\Users\\sanzprime"
   },
   "storage": {
-    "note": "dilewati sesuai config",
-    "boost": "skip"
+    "boost": "skip",
+    "note": "dilewati sesuai config"
   },
   "win10": {
     "look": "ok",
@@ -42,36 +42,36 @@
   "media": {
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
     "audio_output": "rdp_playback_enabled",
-    "wallpaper": "xyverse_configured_for_user_logon",
-    "microphone": "rdp_capture_enabled"
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon"
   },
   "games": {
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
-      "status": "ready"
-    },
     "ets2": {
       "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
     },
     "roblox": {
       "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
       "status": "ready-antivm"
     },
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
+    "minecraft_java": {
+      "official_exe": true,
+      "opengl46": false,
+      "prismlauncher": true,
+      "status": "ready",
+      "tlauncher_jar": true
     },
     "fivem": {
-      "sound": true,
-      "status": true
+      "status": true,
+      "sound": true
     },
-    "minecraft_java": {
-      "tlauncher_jar": true,
-      "opengl46": false,
-      "status": "ready",
-      "official_exe": true,
-      "prismlauncher": true
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
     }
   },
   "extras": {
@@ -83,9 +83,9 @@
     "admin": true
   },
   "tools_hub": {
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
+    "auto_start": true,
     "installed": true,
-    "auto_start": true
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "xydesk": {
     "host": "ok",
@@ -105,21 +105,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
+    "mode": "tailscale",
     "tunnel": {
-      "selftest": "ok",
+      "status": "ok",
       "outside": "tailscale",
       "port": 3389,
-      "status": "ok",
-      "address": "100.67.76.112:3389",
-      "host": "100.67.76.112"
+      "selftest": "ok",
+      "host": "100.86.170.41",
+      "address": "100.86.170.41:3389"
     },
     "tailscale": {
-      "ip": "100.67.76.112",
-      "magicdns": "rdpfree-20.tailb1062c.ts.net.",
-      "hostname": "rdpfree-20",
+      "status": "ok",
+      "magicdns": "rdpfree-21.tailb1062c.ts.net.",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "status": "ok"
-    },
-    "mode": "tailscale"
+      "hostname": "rdpfree-21",
+      "ip": "100.86.170.41"
+    }
   }
 }
